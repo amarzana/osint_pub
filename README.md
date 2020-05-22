@@ -56,6 +56,13 @@ $ echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
 $ source ~/.bashrc
 ```
 
+Docker Installation
+
+```
+$ docker build -t web_preserve .
+$ docker run --rm -ti web_preserve -h
+```
+
 ## Usage
 
 1. web_preserve.py

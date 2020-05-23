@@ -58,9 +58,15 @@ $ source ~/.bashrc
 
 Docker Installation
 
-```
+```sh
 $ docker build -t web_preserve .
+
+# Docker run basic
 $ docker run --rm -ti web_preserve -h
+
+# web_preserve outputs result data to /web_preserve_data
+# use docker mount function to get result data
+$ docker run -v /yourhost/absolute/path/:/web_preserve_data --rm -ti web_preserve -u yourdomain.com
 ```
 
 ## Usage

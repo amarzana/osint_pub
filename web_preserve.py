@@ -64,7 +64,7 @@ def parse_url(url):
     return url, scheme, hostname, domain, path, ip
 
 def mkdir_chdir_start(hostname):
-    cwd_dir = hostname + '_' + get_now_with_sec()
+    cwd_dir = '/web_preserve_data/' + hostname + '_' + get_now_with_sec()
     p = pathlib.Path(cwd_dir)
     p.mkdir()
     current_dir = pathlib.Path.cwd()
